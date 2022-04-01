@@ -10,7 +10,7 @@ import android.widget.ListView;
 public class MainActivity extends AppCompatActivity {
     //variables globales
     ListView listView;
-    String titulos[]={"Titulo 1","Titulo 2","Titulo 3","Titulo 4",
+    String titulos[]={"Titular 1","Titulo 2","Titulo 3","Titulo 4",
             "Titulo 5","Titulo 6","Titulo 7","Titulo 8" };
     String descripciones[]={"texto texto texto 1","texto texto texto 2",
             "texto texto texto 3","texto texto texto 4",
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void enviar (View view){
         Intent i = new Intent(this,descri.class);
-        i.putExtra("id", R.id.lista);
+        i.putExtra("id", titulos[0]);
         startActivity(i);
     }
 }

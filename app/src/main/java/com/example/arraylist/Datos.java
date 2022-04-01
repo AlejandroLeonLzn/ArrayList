@@ -1,6 +1,7 @@
 package com.example.arraylist;
 
         import android.content.Context;
+        import android.content.Intent;
         import android.view.LayoutInflater;
         import android.view.View;
         import android.view.ViewGroup;
@@ -20,6 +21,7 @@ public class Datos extends BaseAdapter {
     String[] titulos;
     String [] descripciones;
     int [] avatar;
+
 
     //generar constructor
     public Datos(Context context, String[] titulos, String[] descripciones, int[] avatar) {
@@ -47,6 +49,9 @@ public class Datos extends BaseAdapter {
 
         return vista;
     }
+
+
+
     //generar gets
     @Override
     public int getCount() {return avatar.length;}
