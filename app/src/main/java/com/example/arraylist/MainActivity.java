@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void enviar (View view){
         Intent i = new Intent(this,descri.class);
-        i.putExtra("id", titulos[0]);
+        i.putExtra("id", 1);
         startActivity(i);
     }
 }
